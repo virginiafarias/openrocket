@@ -169,7 +169,7 @@ public abstract class MotorFilterPanel extends JPanel {
 			}
 		});
 
-		sub.add(clearMotors,"split 2");
+		sub.add(clearMotors,"split 3");
 
 		JButton selectMotors = new JButton(trans.get("TCMotorSelPan.btn.checkAll"));
 		selectMotors.addActionListener( new ActionListener() {
@@ -180,7 +180,11 @@ public abstract class MotorFilterPanel extends JPanel {
 			}
 		});
 
-		sub.add(selectMotors,"wrap");
+		sub.add(selectMotors);
+
+		JButton addMotors = new JButton(trans.get("TCMotorSelPan.btn.new"));
+
+		sub.add(addMotors,"wrap");
 
 		this.add(sub,"grow, wrap");
 
